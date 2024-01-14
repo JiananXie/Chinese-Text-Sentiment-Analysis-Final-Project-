@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head >
+    <meta charset="utf-8">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-size: 20px;
+        }
+        h2 {
+            font-size: 2em;
+        }
+        input, select {
+            font-size: 1.2em;
+            padding: 10px;
+        }
+        button {
+            font-size: 1.2em;
+            padding: 10px;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<h2>情感分析</h2>
+
+<input type="text" id="myText" placeholder="请输入文本"><br/>
+<select id="classificationType">
+    <option value="二分类">二分类</option>
+    <option value="三分类">三分类</option>
+    <option value="六分类">六分类</option>
+</select><br/>
+<button onclick="getSentiment()">提交</button>
+
+<p id="result" style="white-space: pre-wrap;"></p>
+
+<script src="script.js"></script>
+
+</body>
+</html>
