@@ -32,9 +32,8 @@
 运行 `python BertSentiment.py` 即可训练，记得调整分类数目`num_labels`参数以及从输入文件中分出各个情感的子Dataframe，再利用`Process.py`文件中的`get_balance_corpus_6`方法构建平衡语料数据(本质是避免分类任务的类别不均衡)
 
 <img src="pic/train_val_loss_acc_with_2.png">
-$$
-fig1.Best\,Model\;二分类\;Training\;Process
-$$
+
+$$fig1.\\; BestModel\\; 二分类\\; Training\\; Process$$
 
 
 
@@ -45,13 +44,12 @@ $$
 我们对BERT模型进行了参数调整以及增加Early-stop策略，并引入一系列的评估标准和测试指标来展示我们的结果，与第一次作业相比有大幅提升，并训练了单向LSTM和双向LSTM两个适用于NLP的深度学习模型，所有模型都考虑了是否经过jieba的词性标注分词，以探讨分词的影响。
 
 <img src="pic/BERT.jpg">
-$$
-fig2.BERT\;Parameters\; In \; Training
-$$
+
+$$fig2.BERT\\; Parameters\\; In\\; Training$$
+
 <img src='pic/LSTM and BiLSTM.jpg'>
-$$
-fig3.LSTM\;and \;BiLSTM\;Hyperparameters
-$$
+
+$$fig3.LSTM\\; and\\; BiLSTM\\; Hyperparameters$$
 
 
 
@@ -100,18 +98,15 @@ def feature_extract(data):
 | BiLSTM* | 0.833     | 0.834     | 0.476     | 0.677     |
 | BiLSTM  | 0.571     | 0.474     | 0.678     | 0.073     |
 
-$$
-Table1.\; Experiment\; results\; on\; ChnSentiCorp\_htl\_all.csv
-$$
+$$Table1.Experiment\\; results\\; on\\; ChnSentiCorp\\_htl\\_all.csv$$
 
 <img src='pic/cm_without_2.png'>
-$$
-fig4.Best\,Model\;二分类Confusion\,Matrix
-$$
+
+$$fig4.Best\\; Model\\; 二分类Confusion\\; Matrix$$
+
 <img src="pic/roc_without_2.png">
-$$
-fig5.Best\,Model\;二分类ROC曲线
-$$
+
+$$fig5.Best\\; Model\\; 二分类ROC曲线$$
 
 #### 三分类：
 
@@ -124,18 +119,15 @@ $$
 | BiLSTM* | 0.645     | 0.643     | 0.809     | 0.469     |
 | BiLSTM  | 0.527     | 0.519     | 0.930     | 0.294     |
 
-$$
-Table2.\; Experiment\; results\; on\; Positive\_null\_negative.csv
-$$
+$$Table2.\\; Experiment\\; results\\; on\\;  Positive\\_null\\_negative.csv$$
 
 <img src='pic/cm_without_3.png'>
-$$
-fig6.Best\,Model\;三分类Confusion\,Matrix
-$$
+
+$$fig6.Best\\; Model\\;三分类Confusion\\; Matrix$$
+
 <img src="pic/roc_without_3.png">
-$$
-fig7.Best\,Model\;三分类ROC曲线
-$$
+
+$$fig7.Best\\; Model\\; 三分类ROC曲线$$
 
 #### 六分类：
 
@@ -148,18 +140,15 @@ $$
 | BiLSTM* | 0.456     | 0.455     | 1.628     | 0.348     |
 | BiLSTM  | 0.373     | 0.388     | 1.627     | 0.248     |
 
-$$
-Table3.\; Experiment\; results\; on\; Sina.csv
-$$
+$$Table3.\\; Experiment\\; results\\; on\\; Sina.csv$$
 
 <img src="pic/cm_without_6.png">
-$$
-fig8.Best\,Model\;六分类Confusion\,Matrix
-$$
+
+$$fig8.Best\\; Model\\; 六分类Confusion\\; Matrix$$
+
 <img src="pic/roc_without_6.png">
-$$
-fig9.Best\,Model\;六分类ROC曲线
-$$
+
+$$fig9.Best\\; Model\\; 六分类ROC曲线$$
 
 ### Conclusion
 
